@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.what {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: moveRight 4s linear infinite;
+}
+  
+@keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(500px); /* Desloca 500px para a direita */
+    }
+}
+  

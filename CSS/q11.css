@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #232323;
+    color: #fff;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.container {
+    position: relative;
+}
+  
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation: pulseRotate 2s infinite alternate ease-in-out;
+}
+  
+@keyframes pulseRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  

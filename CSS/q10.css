@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #232323;
+    color: #fff;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('../Imagens/q10.png'); /* Coloque o caminho para sua imagem */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    animation: mover 2s ease;
+}
+
+@keyframes mover {
+    0% {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    100% {
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        background-position: initial;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+}

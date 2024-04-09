@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.quadrado {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: absolute;
+  animation: mudarCor 2s linear infinite;
+}
+
+@keyframes mudarCor {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+  50% {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+  }
+
+  100%{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+  }
+}

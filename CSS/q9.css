@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #232323;
+    color: #fff;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #007bff;
+    position: relative;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+}
