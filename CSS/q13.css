@@ -20,6 +20,8 @@ body {
 
 .container {
     display: flex;
+    position: absolute;
+    top: 300px;
 }
 
 .square1 {
